@@ -5,12 +5,18 @@ Create Blazor App with following Requirements
 - Create a reusable Blazor Component which has the following behavior
   - TextField that a user can type any string
   - It must autosuggest a result based on the string entered
+  
 - The main compoment must query from an example GET API pass the adata to the autosuggest component and display or suggest the main keyword for each item.
+
 - There must radio buttons (atleast two) in the main component that toggles which datasources the component will query from. for example https://pokeapi.co/ (find another similar service)
+
 - The Component must be generic enough that it can support any shape or data type from the result of the data source. 
   The consumer of the component will just specify the value and label for each item
+
 - When the user clicks the item. You must save the JSON of the item clicked and save it to the browser localstorage.
+
 - You must have another component (not necessarily reusable) but the purpose of this component is to display the saved items from the browser localstorage.
   (You will have to use JSInterop built-in concept in Blazor, please don't use any existing library for this.)
   (The JavaScript interop code must be written in Typescript, transpiles simply to js files)
+
 - You must provide a UI function to the user to remove an item from the list.
